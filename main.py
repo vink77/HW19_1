@@ -13,7 +13,7 @@ class MyServer(BaseHTTPRequestHandler):
 
     def get_text_html(self):
         """ Метод для чтения данных из html-файла """
-        with open('index.html', encoding='utf-8') as a:
+        with open('./index.html', encoding='utf-8') as a:
             return a.read()
 
     def do_GET(self):
